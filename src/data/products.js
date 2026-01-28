@@ -14,6 +14,20 @@ export const products = [
     category: "Cricket Bats",
     subCategory: "English Willow",
   },
+  {
+    id: "eb-3",
+    name: "SG Slammer Classic",
+    images: ["/sg-bat.jpg", "/sg-bat-side.jpg", "/sg-bat-back.jpg"],
+    category: "Cricket Bats",
+    subCategory: "English Willow",
+  },
+  {
+    id: "eb-4",
+    name: "SS Ton",
+    images: ["/ton-bat.jpg", "/ton-bat-side.jpg", "/ton-bat-back.jpg"],
+    category: "Cricket Bats",
+    subCategory: "English Willow",
+  },
 
   // --- KASHMIR WILLOW ---
   {
@@ -34,31 +48,65 @@ export const products = [
     subCategory: "Tennis Bats",
   },
 
-  // --- OTHER MAIN CATEGORIES ---
+  // --- Leather Balls ---
   {
     id: "red-ball",
     name: "Leather Ball",
-    images: ["/redball.jpg","/redball2.jpg"],
+    images: ["/redball.jpg", "/redball2.jpg"],
     category: "Leather Balls",
     subCategory: "Red Leather Balls",
   },
   {
     id: "white-ball",
     name: "Leather Ball",
-    images: ["/whiteball.jpg","/redball2.jpg"],
+    images: ["/whiteball.jpg", "/redball2.jpg"],
     category: "Leather Balls",
     subCategory: "White Leather Balls",
   },
+
+  // Accessories
   {
     id: "acc-1",
-    name: "Cricket Grip / Tape",
-    images: ["https://images.unsplash.com/photo-1593032465175-481ac7f401a0"],
+    name: "SS Kit Bag",
+    images: ["/kit-bag1.jpg", "/kit-bag2.jpg", "/kit-bag3.jpg"],
     category: "Accessories",
+    subCategory: "Kit Bags",
   },
+  {
+    id: "acc-2",
+    name: "Cricket Grip",
+    images: ["/grip.jpg"],
+    category: "Accessories",
+    subCategory: "Bat Grips",
+  },
+
+  // protections
   {
     id: "prot-1",
     name: "Pro Batting Pads",
-    images: ["https://images.unsplash.com/photo-1593032465175-481ac7f401a0"],
+    images: ["/leg-guards.jpg"],
     category: "Protection",
+    subCategory: "Leg Guards",
+  },
+  {
+    id: "prot-2",
+    name: "Pro Batting Gloves",
+    images: ["/gloves.jpg"],
+    category: "Protection",
+    subCategory: "Batting Gloves",
+  },
+  {
+    id: "prot-3",
+    name: "Helmet",
+    images: ["/helmet.jpg"],
+    category: "Protection",
+    subCategory: "Helmets",
+  },
+  {
+    id: "prot-4",
+    name: "Moonwalkr Thigh Pad",
+    images: ["/thigh-pad.jpg"],
+    category: "Protection",
+    subCategory: "Thigh Pads",
   },
 ];

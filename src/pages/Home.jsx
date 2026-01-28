@@ -22,9 +22,9 @@ const brands = [
   { name: "New Balance", logo: "/nb.webp" },
   { name: "SS", logo: "/ss.webp" },
   { name: "DSC", logo: "/dsc.png" },
-  { name: "GM", logo: "/public/gm.png" },
+  { name: "GM", logo: "/gm.png" },
   { name: "KOKKABURRA", logo: "/kookaburra.png" },
-  { name: "CEAT", logo: "/public/ceat.png" },
+  { name: "CEAT", logo: "/ceat.png" },
 ];
 
 const featuredCategories = [
