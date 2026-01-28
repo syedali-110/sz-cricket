@@ -192,6 +192,115 @@ export default function Home() {
         />
       </section>
 
+      {/* --- CUSTOMIZATION SECTION --- */}
+      <section className="relative w-full py-20 px-6 lg:px-20 border-y border-white/5 bg-linear-to-br from-[#0f0f0f] via-[#1a1a1a] to-black overflow-hidden">
+        {/* Subtle Background Glow Animation */}
+        <motion.div
+          animate={{
+            opacity: [0.3, 0.5, 0.3],
+            scale: [1, 1.2, 1],
+          }}
+          transition={{ duration: 8, repeat: Infinity }}
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-pink-500/5 blur-[120px] rounded-full pointer-events-none"
+        />
+
+        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="space-y-12"
+          >
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="text-3xl md:text-5xl font-black tracking-tighter leading-tight"
+            >
+              CREATE YOUR <br />
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-pink-500 to-purple-600">
+                OWN WEAPON
+              </span>
+            </motion.h2>
+
+            {/* Steps Row with Staggered Animation */}
+            <div className="flex flex-wrap md:flex-nowrap items-center gap-8">
+              {[
+                { step: "STEP 1", title: "Customise it" },
+                { step: "STEP 2", title: "Personalise styling" },
+                { step: "STEP 3", title: "Hit the crease!" },
+              ].map((item, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.4 + i * 0.1 }}
+                  className="flex items-center gap-4"
+                >
+                  <div className="flex flex-col">
+                    <span className="text-pink-500 text-[10px] font-black tracking-widest">
+                      {item.step}
+                    </span>
+                    <span className="text-white font-bold whitespace-nowrap">
+                      {item.title}
+                    </span>
+                  </div>
+                  {i < 2 && (
+                    <span className="hidden md:block text-pink-500/50 text-2xl">
+                      →
+                    </span>
+                  )}
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.button
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.8 }}
+              onClick={() =>
+                window.open(
+                  `https://wa.me/919045904083?text=I%20want%20to%20customize%20my%20own%20bat`,
+                  "_blank",
+                )
+              }
+              className="px-12 py-5 bg-linear-to-r from-pink-500 to-purple-600 rounded-xl font-black text-sm uppercase tracking-widest hover:brightness-130 transition-all cursor-pointer shadow-[0_20px_40px_rgba(236,72,153,0.2)]"
+            >
+              Get Started
+            </motion.button>
+          </motion.div>
+
+          {/* Right Side - Floating Image Animation */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="w-full flex justify-center items-center"
+          >
+            <motion.div
+              animate={{ y: [0, -15, 0] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              className="w-full h-[350px] md:h-[500px] rounded-[2.5rem] overflow-hidden shadow-2xl relative"
+            >
+              <div className="absolute inset-0 bg-linear-to-tr from-pink-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <img
+                src="/customize.png"
+                alt="Custom Cricket Bat Manufacturing"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* --- BRAND LOGO ROTATING SECTION (Modern & Bold) --- */}
       <section
         id="brands-section"

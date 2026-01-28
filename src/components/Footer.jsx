@@ -11,7 +11,7 @@ export default function Footer() {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20SZ%20Cricket!`;
 
   return (
-    <footer className="relative bg-[#0a0a0a] text-gray-400 pt-20 pb-10 border-t border-white/5 overflow-hidden">
+    <footer className="relative bg-[#0a0a0a] text-gray-400 pt-10 pb-5 border-t border-white/5 overflow-hidden">
       {/* Subtle Background Glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[300px] bg-purple-600/5 blur-[120px] -z-10"></div>
 
@@ -167,7 +167,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/5 pt-10 flex flex-col md:flex-row items-center justify-between gap-6 text-[11px] font-bold tracking-widest uppercase">
+        <div className="border-t border-white/5 pt-4 flex flex-col md:flex-row items-center justify-between gap-6 text-[11px] font-bold tracking-widest uppercase">
           <p>© 2026 SZ CRICKET. ALL RIGHTS RESERVED.</p>
           <div className="flex items-center gap-4">
             <span className="text-gray-600">Secure Payments</span>
@@ -184,9 +184,9 @@ export default function Footer() {
         href={whatsappLink}
         target="_blank"
         rel="noreferrer"
-        className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-2xl shadow-[0_10px_30px_rgba(37,211,102,0.3)] hover:scale-110 transition-all duration-300"
+        className="fixed bottom-6 right-6 z-50 bg-white/10 backdrop-blur-md text-green-500 p-0 rounded-2xl border border-white/10 shadow-[0_10px_30px_rgba(37,211,102,0.3)] hover:scale-110 hover:bg-white/20 transition-all duration-300"
       >
-        <FaWhatsapp size={24} />
+        <FaWhatsapp size={44} />
       </a>
     </footer>
   );
