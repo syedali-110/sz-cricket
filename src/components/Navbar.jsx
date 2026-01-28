@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { HiOutlineLocationMarker, HiOutlinePhone } from "react-icons/hi";
-import logo from "/public/logo.png";
+import logo from "/logo.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
