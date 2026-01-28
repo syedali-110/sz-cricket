@@ -70,7 +70,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/#brands-section" 
+                  to="/#brands-section"
                   className="hover:text-pink-500 transition-colors"
                 >
                   Brands
@@ -128,28 +128,36 @@ export default function Footer() {
             <div className="flex gap-4">
               {[
                 {
-                  icon: <FaWhatsapp />,
+                  icon: <FaWhatsapp size={20} />,
                   link: whatsappLink,
-                  color: "hover:text-green-500",
+                  brandColor: "text-[#25D366]", // Official WhatsApp Green
+                  borderColor: "hover:border-[#25D366]/50",
                 },
                 {
-                  icon: <FaInstagram />,
+                  icon: <FaInstagram size={20} />,
                   link: "https://instagram.com/szcricketofficial",
-                  color: "hover:text-pink-500",
+                  brandColor: "text-[#E4405F]", // Official Instagram Pink/Red
+                  borderColor: "hover:border-[#E4405F]/50",
                 },
+                // {
+                //   icon: <FaFacebookF size={20} />,
+                //   link: "#",
+                //   brandColor: "text-[#1877F2]", // Official Facebook Blue
+                //   borderColor: "hover:border-[#1877F2]/50",
+                // },
                 {
-                  icon: <FaFacebookF />,
-                  link: "#",
-                  color: "hover:text-blue-500",
+                  icon: <FaYoutube size={20} />,
+                  link: "https://youtube.com/@szcricketofficial923?si=TuC5gix6Tkesp9OB",
+                  brandColor: "text-[#FF0000]", // Official YouTube Red
+                  borderColor: "hover:border-[#FF0000]/50",
                 },
-                { icon: <FaYoutube />, link: "#", color: "hover:text-red-500" },
               ].map((social, i) => (
                 <a
                   key={i}
                   href={social.link}
                   target="_blank"
                   rel="noreferrer"
-                  className={`p-3 bg-white/[0.03] border border-white/5 rounded-2xl ${social.color} transition-all duration-300 hover:bg-white/[0.08] hover:border-white/20`}
+                  className={`p-3 bg-white/[0.03] border border-white/5 rounded-2xl transition-all duration-300 hover:bg-white/[0.08] ${social.brandColor} ${social.borderColor} hover:scale-110`}
                 >
                   {social.icon}
                 </a>
