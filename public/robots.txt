@@ -1,0 +1,10 @@
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Specifically allow Googlebot-Image to access your logo
+User-agent: Googlebot-Image
+Allow: /logo.png
+
+# Link to your sitemap (if you have one)
+Sitemap: https://sz-cricket.vercel.app/sitemap.xml
