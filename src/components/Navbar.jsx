@@ -43,7 +43,7 @@ export default function Navbar() {
                   to="/about"
                   className="hover:text-white transition-colors"
                 >
-                  About
+                  About Us
                 </Link>
                 <Link
                   to="/contact"
@@ -128,7 +128,7 @@ export default function Navbar() {
               Products
             </Link>
             <Link onClick={() => setOpen(false)} to="/about">
-              About
+              About Us
             </Link>
             <Link onClick={() => setOpen(false)} to="/contact">
               Contact
