@@ -139,12 +139,12 @@ export default function Footer() {
                   brandColor: "text-[#E4405F]", // Official Instagram Pink/Red
                   borderColor: "hover:border-[#E4405F]/50",
                 },
-                // {
-                //   icon: <FaFacebookF size={20} />,
-                //   link: "#",
-                //   brandColor: "text-[#1877F2]", // Official Facebook Blue
-                //   borderColor: "hover:border-[#1877F2]/50",
-                // },
+                {
+                  icon: <FaFacebookF size={20} />,
+                  link: "https://www.facebook.com/szcricketofficial/",
+                  brandColor: "text-[#1877F2]", // Official Facebook Blue
+                  borderColor: "hover:border-[#1877F2]/50",
+                },
                 {
                   icon: <FaYoutube size={20} />,
                   link: "https://youtube.com/@szcricketofficial923?si=TuC5gix6Tkesp9OB",
