@@ -30,13 +30,14 @@ const ShippingPolicy = () => {
 
       <div className="relative z-10 max-w-4xl mx-auto">
         {/* Header Section */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-6xl font-black mb-6 tracking-tight">
-            SHIPPING <span className="text-transparent bg-clip-text bg-linear-to-r from-pink-500 to-purple-600">INFO</span>
+            SHIPPING{" "}
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-pink-500 to-purple-600">INFO</span>
           </h1>
           <div className="w-24 h-1.5 bg-linear-to-r from-pink-500 to-purple-600 mx-auto rounded-full mb-8"></div>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
@@ -56,13 +57,15 @@ const ShippingPolicy = () => {
             >
               <div className="text-3xl mb-4">{step.icon}</div>
               <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">{step.desc}</p>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                {step.desc}
+              </p>
             </motion.div>
           ))}
         </div>
 
         {/* Detailed Shipping Info */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
@@ -73,28 +76,44 @@ const ShippingPolicy = () => {
               <MapPin size={24} className="text-pink-500" /> Dispatch Location
             </h2>
             <p className="text-gray-400 leading-relaxed">
-              All orders are dispatched directly from our flagship store and warehouse in **Shastri Nagar, Meerut**. Being at the heart of the cricket manufacturing hub allows us to personally inspect every piece of equipment before it is boxed.
+              All orders are dispatched directly from our flagship store and
+              warehouse in **Shastri Nagar, Meerut**. Being at the heart of the
+              cricket manufacturing hub allows us to personally inspect every
+              piece of equipment before it is boxed.
             </p>
           </section>
 
           <section className="pt-8 border-t border-white/5">
-            <h2 className="text-2xl font-bold text-white mb-4">Tracking Your Order</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">
+              Tracking Your Order
+            </h2>
             <p className="text-gray-400 leading-relaxed">
-              Once your gear is dispatched, you will receive an SMS and Email containing your tracking number and a direct link to follow your shipment in real-time.
+              Once your gear is dispatched, you will receive an SMS and Email
+              containing your tracking number and a direct link to follow your
+              shipment in real-time.
             </p>
           </section>
 
           <section className="pt-8 border-t border-white/5">
-            <h2 className="text-2xl font-bold text-white mb-4">Packaging & Safety</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">
+              Packaging & Safety
+            </h2>
             <p className="text-gray-400 leading-relaxed">
-              We use heavy-duty, moisture-resistant corrugated boxes and industrial-grade bubble wrap to ensure that your English Willow bats are protected from temperature changes and impact during transit.
+              We use heavy-duty, moisture-resistant corrugated boxes and
+              industrial-grade bubble wrap to ensure that your English Willow
+              bats are protected from temperature changes and impact during
+              transit.
             </p>
           </section>
 
           <section className="pt-8 border-t border-white/5">
-            <h2 className="text-2xl font-bold text-white mb-4">Customs & Duties (International)</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">
+              Customs & Duties (International)
+            </h2>
             <p className="text-gray-400 leading-relaxed">
-              For international orders, any customs duties or import taxes levied by the destination country are the responsibility of the customer. Please check your local regulations before ordering.
+              For international orders, any customs duties or import taxes
+              levied by the destination country are the responsibility of the
+              customer. Please check your local regulations before ordering.
             </p>
           </section>
         </motion.div>
@@ -102,8 +121,8 @@ const ShippingPolicy = () => {
         {/* WhatsApp Support CTA */}
         <div className="mt-12 text-center">
           <p className="text-gray-500 mb-6">Need a custom shipping quote?</p>
-          <button 
-            onClick={() => window.open("https://wa.me/919045904083", "_blank")}
+          <button
+            onClick={() => window.open("https://wa.me/918979997715", "_blank")}
             className="px-10 py-4 rounded-2xl bg-linear-to-r from-pink-500 to-purple-600 font-bold hover:shadow-[0_0_20px_rgba(236,72,153,0.3)] transition-all cursor-pointer"
           >
             Chat with Logistics Team
