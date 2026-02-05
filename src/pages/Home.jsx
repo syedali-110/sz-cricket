@@ -288,13 +288,13 @@ export default function Home() {
             <motion.div
               animate={{ y: [0, -15, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="w-full h-[350px] md:h-[500px] rounded-[2.5rem] overflow-hidden shadow-2xl relative"
+              className="w-full h-auto md:h-[500px] rounded-[2.5rem] overflow-hidden shadow-2xl relative"
             >
-              <div className="absolute inset-0 bg-linear-to-tr from-pink-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-linear-to-tr from-pink-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
               <img
                 src="/customize.png"
                 alt="Custom Cricket Bat Manufacturing"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className="w-full h-full object-contain md:object-cover transition-transform duration-700 group-hover:scale-110"
               />
             </motion.div>
           </motion.div>
