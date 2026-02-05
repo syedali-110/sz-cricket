@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 
 export default function Footer() {
-  const whatsappNumber = "919045904083";
+  const whatsappNumber = "918979997715";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20SZ%20Cricket!`;
 
   return (

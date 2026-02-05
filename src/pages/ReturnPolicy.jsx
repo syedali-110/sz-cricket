@@ -100,7 +100,7 @@ const ReturnPolicy = () => {
         <div className="mt-12 text-center">
           <p className="text-gray-500 mb-6">Need help with a return?</p>
           <button 
-            onClick={() => window.open("https://wa.me/919045904083", "_blank")}
+            onClick={() => window.open("https://wa.me/918979997715", "_blank")}
             className="px-10 py-4 rounded-2xl bg-linear-to-r from-pink-500 to-purple-600 font-bold hover:scale-105 transition-transform cursor-pointer"
           >
             Contact Support via WhatsApp

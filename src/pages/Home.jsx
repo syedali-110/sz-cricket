@@ -117,7 +117,7 @@ export default function Home() {
     const message = encodeURIComponent(
       `Hello SZ Cricket! I am interested in ${productName}. Could you please provide more details?`,
     );
-    window.open(`https://wa.me/919045904083?text=${message}`, "_blank");
+    window.open(`https://wa.me/918979997715?text=${message}`, "_blank");
   };
 
   const handleCategorySelection = (categoryLabel) => {
@@ -159,7 +159,7 @@ export default function Home() {
               <button
                 onClick={() =>
                   window.open(
-                    "https://wa.me/919045904083?text=Hello%20SZ%20Cricket",
+                    "https://wa.me/918979997715?text=Hello%20SZ%20Cricket",
                     "_blank",
                   )
                 }
@@ -267,7 +267,7 @@ export default function Home() {
               transition={{ delay: 0.8 }}
               onClick={() =>
                 window.open(
-                  `https://wa.me/919045904083?text=I%20want%20to%20customize%20my%20own%20bat`,
+                  `https://wa.me/918979997715?text=I%20want%20to%20customize%20my%20own%20bat`,
                   "_blank",
                 )
               }

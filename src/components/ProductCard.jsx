@@ -10,7 +10,7 @@ export default function ProductCard({ product }) {
 
   // --- WHATSAPP LOGIC START ---
   const handleWhatsAppClick = () => {
-    const phoneNumber = "9045904083";
+    const phoneNumber = "8979997715";
     const message =
       `Hi! I'm interested in the *${product.name}*.\n\n` +
       `*Category:* ${product.category}\n` +

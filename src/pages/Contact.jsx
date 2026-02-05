@@ -42,10 +42,10 @@ export default function Contact() {
                 <FiPhone className="text-pink-500 mb-4" size={24} />
                 <h3 className="font-bold text-lg mb-1">Call Us</h3>
                 <a
-                  href="tel:9045904083"
+                  href="tel:8979997715"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  +91 9045904083
+                  +91 8979997715
                 </a>
               </div>
 
@@ -88,7 +88,7 @@ export default function Contact() {
             <button
               onClick={() =>
                 window.open(
-                  "https://wa.me/919045904083?text=Hello%20SZ%20Cricket%2C%20I%20want%20to%20place%20an%20order",
+                  "https://wa.me/918979997715?text=Hello%20SZ%20Cricket%2C%20I%20want%20to%20place%20an%20order",
                   "_blank",
                 )
               }
@@ -99,7 +99,7 @@ export default function Contact() {
           </div>
 
           {/* Right Column: Map Embed */}
-          <div className="h-[400px] lg:h-full min-h-[400px] rounded-3xl overflow-hidden border border-white/10 grayscale-[0.8] hover:grayscale-0 transition-all duration-500">
+          <div className="h-[400px] lg:h-full min-h-[400px] rounded-3xl overflow-hidden hover:grayscale-0 transition-all duration-500">
             <iframe
               title="SZ Cricket Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3491.543545166299!2d77.7268!3d28.966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDU3JzU3LjYiTiA3N8KwNDMnMzYuNSJF!5e0!3m2!1sen!2sin!4v1700000000000"

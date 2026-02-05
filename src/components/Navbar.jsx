@@ -65,11 +65,11 @@ export default function Navbar() {
                   <span>Meerut, India</span>
                 </a>
                 <a
-                  href="tel:+919045904083"
+                  href="tel:+918979997715"
                   className="flex items-center gap-1.5 text-gray-400 hover:text-white text-[12px] transition-colors"
                 >
                   <HiOutlinePhone className="text-purple-500" />
-                  <span>+91 9045904083</span>
+                  <span>+91 8979997715</span>
                 </a>
 
                 {/* FIXED: Corrected handle for Desktop View */}
@@ -143,8 +143,8 @@ export default function Navbar() {
             </div>
             <div className="flex items-center gap-4 text-gray-300">
               <HiOutlinePhone className="text-purple-500 text-2xl" />
-              <a href="tel:+919045904083" className="text-sm">
-                +91 9045904083
+              <a href="tel:+918979997715" className="text-sm">
+                +91 8979997715
               </a>
             </div>
 
@@ -165,7 +165,7 @@ export default function Navbar() {
           <button
             onClick={() =>
               window.open(
-                "https://wa.me/919045904083?text=Hello%20SZ%20Cricket",
+                "https://wa.me/918979997715?text=Hello%20SZ%20Cricket",
                 "_blank",
               )
             }
